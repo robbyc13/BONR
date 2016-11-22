@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @dog.breed_id %>
+</p>
+
+<p>
+  <strong>Shelter:</strong>
+  <%= @dog.shelter_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dog.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @dog.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @dog.gender %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @dog.size %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @dog.weight %>
+</p>
+
+<p>
+  <strong>Photo link:</strong>
+  <%= @dog.photo_link %>
+</p>
+
+<p>
+  <strong>Number of likes:</strong>
+  <%= @dog.number_of_likes %>
+</p>
+
+<p>
+  <strong>Number of dislikes:</strong>
+  <%= @dog.number_of_dislikes %>
+</p>
+
+<p>
+  <strong>Number of hotdogs:</strong>
+  <%= @dog.number_of_hotdogs %>
+</p>
+
+<p>
+  <strong>Has been adopted:</strong>
+  <%= @dog.has_been_adopted %>
+</p>
+
+<p>
+  <strong>Is available:</strong>
+  <%= @dog.is_available %>
+</p>
+
+<p>
+  <strong>Foster family:</strong>
+  <%= @dog.foster_family %>
+</p>
+
+<p>
+  <strong>Number of times attempted to adopt:</strong>
+  <%= @dog.number_of_times_attempted_to_adopt %>
+</p>
+
+<p>
+  <strong>Hot dog:</strong>
+  <%= @dog.hot_dog %>
+</p>
+
+<%= link_to 'Edit', edit_dog_path(@dog) %> |
+<%= link_to 'Back', dogs_path %>

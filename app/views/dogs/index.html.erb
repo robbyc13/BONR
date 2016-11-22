@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Breed</th>
+      <th>Shelter</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Size</th>
+      <th>Weight</th>
+      <th>Photo link</th>
+      <th>Number of likes</th>
+      <th>Number of dislikes</th>
+      <th>Number of hotdogs</th>
+      <th>Has been adopted</th>
+      <th>Is available</th>
+      <th>Foster family</th>
+      <th>Number of times attempted to adopt</th>
+      <th>Hot dog</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dogs.each do |dog| %>
+      <tr>
+        <td><%= dog.breed_id %></td>
+        <td><%= dog.shelter_id %></td>
+        <td><%= dog.name %></td>
+        <td><%= dog.age %></td>
+        <td><%= dog.gender %></td>
+        <td><%= dog.size %></td>
+        <td><%= dog.weight %></td>
+        <td><%= dog.photo_link %></td>
+        <td><%= dog.number_of_likes %></td>
+        <td><%= dog.number_of_dislikes %></td>
+        <td><%= dog.number_of_hotdogs %></td>
+        <td><%= dog.has_been_adopted %></td>
+        <td><%= dog.is_available %></td>
+        <td><%= dog.foster_family %></td>
+        <td><%= dog.number_of_times_attempted_to_adopt %></td>
+        <td><%= dog.hot_dog %></td>
+        <td><%= link_to 'Show', dog %></td>
+        <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
+        <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dog', new_dog_path %>

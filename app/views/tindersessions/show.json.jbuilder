@@ -1,0 +1,1 @@
+json.partial! "tindersessions/tindersession", tindersession: @tindersession

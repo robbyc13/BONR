@@ -1,0 +1,1 @@
+json.array! @tindersessions, partial: 'tindersessions/tindersession', as: :tindersession

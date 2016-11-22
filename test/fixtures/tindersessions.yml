@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: 1
+  datetime: 2016-11-10
+  number_of_likes_within_session: 
+  number_of_dislikes_within_session: 1
+  number_of_hotdogs_within_session: 1
+  max_set_of_dogs: 1
+
+two:
+  uid: 1
+  datetime: 2016-11-10
+  number_of_likes_within_session: 
+  number_of_dislikes_within_session: 1
+  number_of_hotdogs_within_session: 1
+  max_set_of_dogs: 1

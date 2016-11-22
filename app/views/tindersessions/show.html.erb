@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @tindersession.uid %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @tindersession.datetime %>
+</p>
+
+<p>
+  <strong>Number of likes within session:</strong>
+  <%= @tindersession.number_of_likes_within_session %>
+</p>
+
+<p>
+  <strong>Number of dislikes within session:</strong>
+  <%= @tindersession.number_of_dislikes_within_session %>
+</p>
+
+<p>
+  <strong>Number of hotdogs within session:</strong>
+  <%= @tindersession.number_of_hotdogs_within_session %>
+</p>
+
+<p>
+  <strong>Max set of dogs:</strong>
+  <%= @tindersession.max_set_of_dogs %>
+</p>
+
+<%= link_to 'Edit', edit_tindersession_path(@tindersession) %> |
+<%= link_to 'Back', tindersessions_path %>

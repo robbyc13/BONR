@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  breed_id: 1
+  shelter_id: 1
+  name: MyString
+  age: 1
+  gender: MyString
+  size: MyString
+  weight: MyString
+  photo_link: MyString
+  number_of_likes: 1
+  number_of_dislikes: 1
+  number_of_hotdogs: 1
+  has_been_adopted: MyString
+  is_available: MyString
+  foster_family: MyString
+  number_of_times_attempted_to_adopt: MyString
+  hot_dog: MyString
+
+two:
+  breed_id: 1
+  shelter_id: 1
+  name: MyString
+  age: 1
+  gender: MyString
+  size: MyString
+  weight: MyString
+  photo_link: MyString
+  number_of_likes: 1
+  number_of_dislikes: 1
+  number_of_hotdogs: 1
+  has_been_adopted: MyString
+  is_available: MyString
+  foster_family: MyString
+  number_of_times_attempted_to_adopt: MyString
+  hot_dog: MyString

@@ -1,0 +1,2 @@
+json.extract! dog, :id, :breed_id, :shelter_id, :name, :age, :gender, :size, :weight, :photo_link, :number_of_likes, :number_of_dislikes, :number_of_hotdogs, :has_been_adopted, :is_available, :foster_family, :number_of_times_attempted_to_adopt, :hot_dog, :created_at, :updated_at
+json.url dog_url(dog, format: :json)

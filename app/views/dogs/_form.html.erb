@@ -1,0 +1,81 @@
+<%= form_for(@dog) do |f| %>
+  <% if @dog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dog.errors.count, "error") %> prohibited this dog from being saved:</h2>
+
+      <ul>
+      <% @dog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :breed_id %><br>
+    <%= f.number_field :breed_id %>
+  </div>
+  <div class="field">
+    <%= f.label :shelter_id %><br>
+    <%= f.number_field :shelter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br>
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :photo_link %><br>
+    <%= f.text_field :photo_link %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_likes %><br>
+    <%= f.number_field :number_of_likes %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_dislikes %><br>
+    <%= f.number_field :number_of_dislikes %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_hotdogs %><br>
+    <%= f.number_field :number_of_hotdogs %>
+  </div>
+  <div class="field">
+    <%= f.label :has_been_adopted %><br>
+    <%= f.text_field :has_been_adopted %>
+  </div>
+  <div class="field">
+    <%= f.label :is_available %><br>
+    <%= f.text_field :is_available %>
+  </div>
+  <div class="field">
+    <%= f.label :foster_family %><br>
+    <%= f.text_field :foster_family %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_times_attempted_to_adopt %><br>
+    <%= f.text_field :number_of_times_attempted_to_adopt %>
+  </div>
+  <div class="field">
+    <%= f.label :hot_dog %><br>
+    <%= f.text_field :hot_dog %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! tindersession, :id, :uid, :datetime, :number_of_likes_within_session, :number_of_dislikes_within_session, :number_of_hotdogs_within_session, :max_set_of_dogs, :created_at, :updated_at
+json.url tindersession_url(tindersession, format: :json)

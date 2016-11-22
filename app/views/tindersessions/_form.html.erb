@@ -1,0 +1,41 @@
+<%= form_for(@tindersession) do |f| %>
+  <% if @tindersession.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tindersession.errors.count, "error") %> prohibited this tindersession from being saved:</h2>
+
+      <ul>
+      <% @tindersession.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.number_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :datetime %><br>
+    <%= f.date_select :datetime %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_likes_within_session %><br>
+    <%= f.text_field :number_of_likes_within_session %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_dislikes_within_session %><br>
+    <%= f.number_field :number_of_dislikes_within_session %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_hotdogs_within_session %><br>
+    <%= f.number_field :number_of_hotdogs_within_session %>
+  </div>
+  <div class="field">
+    <%= f.label :max_set_of_dogs %><br>
+    <%= f.number_field :max_set_of_dogs %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

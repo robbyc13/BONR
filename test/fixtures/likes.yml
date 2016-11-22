@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dog_id: 1
+  tinder_session: 1
+  type: 
+  datetime: 2016-11-10
+
+two:
+  dog_id: 1
+  tinder_session: 1
+  type: 
+  datetime: 2016-11-10
