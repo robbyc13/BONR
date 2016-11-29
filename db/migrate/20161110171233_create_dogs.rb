@@ -9,6 +9,7 @@ class CreateDogs < ActiveRecord::Migration
       t.string :gender
       t.string :size
       t.string :weight
+      t.string :breed
       t.string :photo_link
       t.integer :number_of_likes
       t.integer :number_of_dislikes

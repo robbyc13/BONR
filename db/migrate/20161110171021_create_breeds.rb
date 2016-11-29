@@ -2,6 +2,7 @@ class CreateBreeds < ActiveRecord::Migration
   def change
     create_table :breeds do |t|
       t.string :name
+      t.integer :breed_id
       t.integer :lifespan
       t.string :shed
       t.string :pure
