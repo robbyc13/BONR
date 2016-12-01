@@ -22,13 +22,15 @@ dog_age=dog_attributes['age']
 dog_age.split(",")
 dog_breed=dog_attributes['breed']
 dog_breed.split(",")
+dog_picture=dog_attributes['img']
+dog_picture.split(",")
 
 count=0
 #Loop through each 
 while count<dog_name.length 
-shelter_num=1
 
-Dog.create(name:dog_name[count], shelter:shelter_num, age:dog_age[count], gender:dog_gender[count],breed:dog_breed[count] )
+
+Dog.create(name:dog_name[count], age:dog_age[count], gender:dog_gender[count],breed:dog_breed[count],photo_link:dog_picture[count])
 
 
 count=count+1
